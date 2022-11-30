@@ -9,5 +9,8 @@
         max-width:188px;
         padding:0;
         margin:0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
 }
