@@ -54,4 +54,7 @@ table{
         td,th{
             padding:10px;
         }
+        .delete-btn{
+            margin-left:15px;
+        }
     }
