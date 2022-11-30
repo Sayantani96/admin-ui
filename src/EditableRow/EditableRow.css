@@ -1,0 +1,11 @@
+.edit-icons{
+    margin-right:10px;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+}
+
+.edit-check{
+    padding:5px;
+    border-radius: 8px;
+}

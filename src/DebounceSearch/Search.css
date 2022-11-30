@@ -1,0 +1,22 @@
+.search-bar{
+    margin-bottom:25px;
+}
+.search-field{
+    
+    width:80%;
+    padding:14px;
+    border-radius:8px;
+    
+    border:3px solid gainsboro;
+}
+
+.search-field:focus{
+    border:3px solid rgba(0,0,0,0.87);
+    outline:none;
+}
+
+@media (max-width:576px){
+    .search-field{
+        width:250%;
+    }
+}
