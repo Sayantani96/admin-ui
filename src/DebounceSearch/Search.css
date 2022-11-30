@@ -14,9 +14,3 @@
     border:1px solid rgba(0,0,0,0.87);
     outline:none;
 }
-
-@media (max-width:576px){
-    .search-field{
-        width:250%;
-    }
-}
