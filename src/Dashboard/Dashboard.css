@@ -47,6 +47,7 @@ table{
     @media (max-width:576px){
         table{
             max-width:65px;
+            padding:10px;
         }
         .pagination-bar{
             border: none;
