@@ -4,7 +4,7 @@ td,th{
     text-align: center;
 }
 table,tr,th,td{
-    border:3px solid gainsboro;
+    border:1px solid gainsboro;
 }
 
 .icons{
@@ -31,13 +31,13 @@ table{
 }
 
 .pagination-bar{
-    border: 3px solid gainsboro;
+    border: 1px solid gainsboro;
     margin-top:15px;
     border-radius:10px;
 }
 
 .pagination-bar:hover{
-    border:3px solid rgba(0,0,0,0.87);
+    border:1px solid rgba(0,0,0,0.87);
 }
 
 .check-box{
