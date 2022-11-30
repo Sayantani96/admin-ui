@@ -1,12 +1,12 @@
 .search-bar{
     margin-bottom:25px;
+    padding-top:25px;
 }
 .search-field{
     
     width:100%;
     padding:14px;
     border-radius:8px;
-    
     border:1px solid gainsboro;
 }
 
@@ -14,3 +14,10 @@
     border:1px solid rgba(0,0,0,0.87);
     outline:none;
 }
+
+@media (max-width:576px){
+    .search-field{
+        width:180%;
+    }
+}
+  
