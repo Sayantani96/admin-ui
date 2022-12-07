@@ -1,10 +1,10 @@
 import React from 'react'
 import './EditableRow.css';
-import save from '../Assets/save.svg';
-import cancel from '../Assets/cancel.svg';
+import save from '../../Assets/save.svg';
+import cancel from '../../Assets/cancel.svg';
 import { useContext } from 'react';
-import { APIContext } from '../Context/APIContext';
-
+import { APIContext } from '../../Context/APIContext';
+import {saveItem,cancelUpdate} from '../../Utils/TableModification.utils';
 
 const EditableRow = ({empId}) => {
 
@@ -25,28 +25,13 @@ const updateRole=(event)=>{
   roleUpdate=event.target.value;
 }
   const saveUpdate=()=>{
-      const updateSave=data.map(info=>{
-        if(info.id===empId){
-          info.name=nameUpdate? nameUpdate:info.name;
-         info.email= mailUpdate?mailUpdate:info.email;
-          info.role=roleUpdate?roleUpdate:info.role;
-          info.edit=false;
-          return info;
-        }
-        return info;
-      })
+      const updateSave=saveItem(data,empId,nameUpdate,mailUpdate,roleUpdate);
       setData(updateSave);
   }
 
-  const cancelUpdate=()=>{
-    const updateSave=data.map(info=>{
-      if(info.id===empId){
-        info.edit=false;
-        return info;
-      }
-      return info;
-    })
-    setData(updateSave);
+  const updateCancel=()=>{
+    const dataUpdate=cancelUpdate(data,empId);
+    setData(dataUpdate);
   }
   return (
     <>
@@ -65,7 +50,7 @@ const updateRole=(event)=>{
         </td>
         <td>
             <img src={save} alt="save" className='edit-icons' onClick={saveUpdate}/>
-            <img src={cancel} alt="cancel" className='edit-icons' onClick={cancelUpdate}/>
+            <img src={cancel} alt="cancel" className='edit-icons' onClick={updateCancel}/>
         </td>
     </>
         

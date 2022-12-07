@@ -30,27 +30,14 @@ table{
     font-size:15px;
 }
 
-.pagination-bar{
-    border: 1px solid gainsboro;
-    margin-top:15px;
-    border-radius:10px;
-}
 
-.pagination-bar:hover{
-    border:1px solid rgba(0,0,0,0.87);
-}
 
 .check-box{
     padding:20px;
     }
 
     @media (max-width:576px){
-        .pagination-bar{
-            border: none;
-        }
-        .pagination-bar:hover{
-            border:none;
-        }
+       
         td,th{
             padding:10px;
         }

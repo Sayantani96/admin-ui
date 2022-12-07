@@ -1,5 +1,5 @@
 import React from 'react'
-import { DOTS,usePagination } from './usePagination';
+import { DOTS,usePagination } from '../../Utils/CustomHooks/usePagination';
 import './Pagination.css';
 
 const Pagination = ({
@@ -25,6 +25,7 @@ const onPrevious=()=>{
     onPageChange(currentPage-1);
 }
 const lastPage=paginationRange[paginationRange.length-1];
+
   return (
     <ul className='pagination-container'>
         {
