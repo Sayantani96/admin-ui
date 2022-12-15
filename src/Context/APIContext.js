@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-
+import { baseURL } from "../Data/baseURL";
 export const APIContext=createContext({
     data:null,
     setData:()=>{},
@@ -16,7 +16,7 @@ export const APIContextProvider=({children})=>{
 
     useEffect(()=>{
         const fetchData=async()=>{
-            const response=await fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json')
+            const response=await fetch(baseURL)
                                 .then(res=>res.json())
                                 .catch(error=>console.log(error.message))
 

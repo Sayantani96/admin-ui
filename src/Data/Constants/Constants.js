@@ -1,0 +1,4 @@
+export const PAGINATION_CONSTANTS={
+    PAGE_SIZE:10,
+    FIRST_PAGE:1
+}
